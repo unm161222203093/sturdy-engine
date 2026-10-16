@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety Alert</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛡️ Women Safety Alert</h1>
+    <p>Your Safety, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#family">Family Contacts</a>
+    <a href="#location">My Location</a>
+    <a href="#police">Police Help</a>
+</nav>
+
+<main>
+    <section id="home" class="card">
+        <h2>Welcome to Women Safety</h2>
+        <p>Stay alert. Stay safe. Keep your trusted contacts ready.</p>
+        <button onclick="showHelp()">Safety Tips</button>
+        <p id="tips"></p>
+    </section>
+
+    <section id="family" class="card">
+        <h2>👨‍👩‍👧 Family Contacts</h2>
+
+        <input id="contactName" placeholder="Family member name">
+        <input id="contactPhone" type="tel"
+               placeholder="Phone number">
+
+        <button onclick="addContact()">Add Contact</button>
+        <ul id="contactList"></ul>
+    </section>
+
+    <section id="location" class="card">
+        <h2>📍 My Location</h2>
+        <p>Allow location permission to view your current location.</p>
+
+        <button onclick="getLocation()">Get My Location</button>
+        <p id="locationResult" aria-live="polite"></p>
+        <a id="mapLink" target="_blank" rel="noopener noreferrer"
+           hidden>View on Google Maps</a>
+    </section>
+
+    <section id="police" class="card">
+        <h2>🚔 Police Help</h2>
+        <p>In India, call 112 for emergency assistance.</p>
+        <a class="button" href="tel:112">Call Emergency Number 112</a>
+        <p class="note">
+            This button opens your device's calling app.
+            It does not automatically send your location.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Women Safety Alert | Student Project</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
